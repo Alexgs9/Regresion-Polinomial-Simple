@@ -259,27 +259,3 @@ plt.ylabel('Y')
 plt.legend()
 plt.title('Gráfica del Modelo de Regresión Polinomial grado 4')
 plt.show()
-
-#------------------------------------------------------------
-#Implementacion de grado 5
-
-# Ajuste de la regresión polinomial de grado 5
-coefficients = np.polyfit(X, y, 5)
-
-# Los coeficientes b0, b1, b2 y b3 son los elementos de 'coefficients'
-b5, b4, b3, b2, b1, b0 = coefficients
-
-print("-----------------------Grado 5------------------------")
-
-print("b0 =", b0)
-print("b1 =", b1)
-print("b2 =", b2)
-print("b3 =", b3)
-print("b4 =", b4)
-print("b5 =", b5)
-
-print("\n")
-
-print("Modelo: y = " + str(b0) + " + " + str(b1) + "x + " + str(b2) + "x^2 + " + str(b3) + "x^3" + str(b4) + "x^4" + str(b5) + "x^5")
-
-print("\n")
